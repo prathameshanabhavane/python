@@ -1,3 +1,4 @@
+import math
 print('Hello World')
 print('*' * 10)
 x = 5
@@ -76,3 +77,11 @@ x = 10
 x += 3  # augmented assignment operator
 
 print(x)
+
+
+print(round(3.9))
+print(abs(-12))
+print(math.ceil(2.6))
+print(math.copysign(1.0, -0.0))
+print(math.factorial(5))
+print(math.floor(5.6))
