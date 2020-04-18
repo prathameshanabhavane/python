@@ -34,10 +34,23 @@ print(course)
 
 
 first_name = "Prathamesh"
-last_name = "Anabhavane"
+last_name = " Anabhavane"
 # full_name = first_name + ' ' + last_name
 full_name = f"{first_name} {last_name}"
 demo = f"{len(first_name)} {2 + 2}"
 # print(first_name + ' ' + last_name)
 print(full_name)
 print(demo)
+
+course_name = "Python Programming"
+
+print(course_name.upper())
+print(course_name.lower())
+print(course_name.title())
+print(course_name.strip())
+# print(course_name.lstrip())
+# print(course_name.rstrip())
+print(course_name.find('Pro'))
+print(course_name.replace('P', 'J'))
+print("Pro" in course_name)
+print("Swift" not in course_name)
