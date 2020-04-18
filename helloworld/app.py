@@ -85,3 +85,17 @@ print(math.ceil(2.6))
 print(math.copysign(1.0, -0.0))
 print(math.factorial(5))
 print(math.floor(5.6))
+
+
+# Type conversion
+# int()
+# float()
+# bool()
+# str()
+
+x = input("x: ")
+y = int(x) + 1
+
+z = f"x: {x}, y: {y}"
+
+print(z)
