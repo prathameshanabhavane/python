@@ -147,3 +147,12 @@ if ((high_income or good_credit) and not student):
     print("Eligible")
 else:
     print("Not eligible")
+
+
+# Short-circuit evalution
+
+if high_income and good_credit and not student:
+    print("ELigible")
+
+ if high_income or good_credit and not student:
+    print("ELigible")   
