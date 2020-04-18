@@ -93,9 +93,21 @@ print(math.floor(5.6))
 # bool()
 # str()
 
-x = input("x: ")
-y = int(x) + 1
+# x = input("x: ")
+# y = int(x) + 1
 
-z = f"x: {x}, y: {y}"
+# z = f"x: {x}, y: {y}"
 
-print(z)
+# print(z)
+
+
+temperature = 15
+
+if temperature > 30:
+    print("it's warm")
+    print('You can dirnk it')
+elif temperature > 20:
+    print("it's nice")
+else:
+    print("It's cold")
+print('Done')
