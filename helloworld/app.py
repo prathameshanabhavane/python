@@ -203,3 +203,15 @@ else:
 for x in range(5):
     for y in range(3):
         print(f"({x}, {y})")
+
+
+# Iterables
+
+for n in range(5):
+    print(n)
+
+for x in 'Python':
+    print(x)
+
+for n in [1, 2, 3, 4, 5, 6]:
+    print(n)
