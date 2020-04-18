@@ -100,7 +100,7 @@ print(math.floor(5.6))
 
 # print(z)
 
-
+# Conditional statement
 temperature = 15
 
 if temperature > 30:
@@ -111,3 +111,12 @@ elif temperature > 20:
 else:
     print("It's cold")
 print('Done')
+
+
+# Ternary Operator
+
+age = 22
+
+message = "Eligible" if age >= 18 else "Not eligile"
+
+print(message)
