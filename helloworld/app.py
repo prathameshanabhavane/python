@@ -20,3 +20,14 @@ print(course_name[0:3])
 print(course_name[0:])
 print(course_name[:3])
 print(course_name[:])
+
+
+# \"
+# \'
+# \\
+# \n
+# course = "Python \"Programming"
+# course = "Python \'Programming"
+# course = "Python \\Programming"
+# course = "Python \nProgramming"
+print(course)
