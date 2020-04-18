@@ -29,5 +29,15 @@ print(course_name[:])
 # course = "Python \"Programming"
 # course = "Python \'Programming"
 # course = "Python \\Programming"
-# course = "Python \nProgramming"
+course = "Python \nProgramming"
 print(course)
+
+
+first_name = "Prathamesh"
+last_name = "Anabhavane"
+# full_name = first_name + ' ' + last_name
+full_name = f"{first_name} {last_name}"
+demo = f"{len(first_name)} {2 + 2}"
+# print(first_name + ' ' + last_name)
+print(full_name)
+print(demo)
