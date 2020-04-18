@@ -219,8 +219,17 @@ for n in [1, 2, 3, 4, 5, 6]:
 
 # While loop
 
-command = ""
+# command = ""
 
-while command.lower() != 'quit':
-    command = input('>>>')
-    print('echo', command)
+# while command.lower() != 'quit':
+#     command = input('>>>')
+#     print('echo', command)
+
+
+# infinite loop
+
+while True:
+    cmd = input('>>>')
+    print('echo', cmd)
+    if cmd.lower() == 'quit':
+        break
