@@ -54,3 +54,25 @@ print(course_name.find('Pro'))
 print(course_name.replace('P', 'J'))
 print("Pro" in course_name)
 print("Swift" not in course_name)
+
+# numbers type
+x = 1  # int
+y = 4.5  # float
+z = 1 + 2j  # complex
+print(type(x))
+print(type(y))
+print(type(z))
+
+print(3 + 5)
+print(3 - 5)
+print(3 * 5)
+print(3 / 5)
+print(3 // 5)
+print(3 % 5)
+print(3 ** 5)
+
+x = 10
+# x = x + 3
+x += 3  # augmented assignment operator
+
+print(x)
