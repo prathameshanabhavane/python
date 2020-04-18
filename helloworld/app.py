@@ -183,3 +183,16 @@ else:
 
 for number in range(1, 4, 2):
     print('attempt', (number * '.'))
+
+
+# for else loop with break keyword
+
+successful = False
+
+for number in range(3):
+    print("attempt")
+    if successful == True:
+        print("Successful")
+        break
+else:
+    print('Attempted 3 times and failed')
