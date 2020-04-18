@@ -207,14 +207,14 @@ for x in range(5):
 
 # Iterables
 
-for n in range(5):
-    print(n)
+# for n in range(5):
+#     print(n)
 
-for x in 'Python':
-    print(x)
+# for x in 'Python':
+#     print(x)
 
-for n in [1, 2, 3, 4, 5, 6]:
-    print(n)
+# for n in [1, 2, 3, 4, 5, 6]:
+#     print(n)
 
 
 # While loop
@@ -228,8 +228,27 @@ for n in [1, 2, 3, 4, 5, 6]:
 
 # infinite loop
 
-while True:
-    cmd = input('>>>')
-    print('echo', cmd)
-    if cmd.lower() == 'quit':
-        break
+# while True:
+#     cmd = input('>>>')
+#     print('echo', cmd)
+#     if cmd.lower() == 'quit':
+#         break
+
+# Exercise
+
+count = 0
+for num in range(1, 10):
+    if num % 2 != 0:
+        count += 1
+        print(num)
+
+print(f'We have {count} odd numbers')
+
+even = []
+for num in range(1, 10):
+    if num % 2 == 0:
+        even.append(num)
+        print(num)
+
+even_total = len(even)
+print(f'We have {even_total} even numbers')
