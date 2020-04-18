@@ -215,3 +215,12 @@ for x in 'Python':
 
 for n in [1, 2, 3, 4, 5, 6]:
     print(n)
+
+
+# While loop
+
+command = ""
+
+while command.lower() != 'quit':
+    command = input('>>>')
+    print('echo', command)
