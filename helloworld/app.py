@@ -169,3 +169,17 @@ if 18 <= age < 65:
     print('age is between 18 and 65')
 else:
     print('age is below the 18 and or above the 65')
+
+
+# for loop
+# for number in range(5):
+#     print(((number + 1) * '*'))
+
+# for number in range(3):
+#     print('attempt', ((number + 1) * '.'))
+
+# for number in range(1, 4):
+#     print('attempt', (number * '.'))
+
+for number in range(1, 4, 2):
+    print('attempt', (number * '.'))
