@@ -21,6 +21,7 @@
 
 # Accessing Items
 
+from collections import deque
 letters = ["a", "b", "c", "d"]
 
 letters[0] = "A"
@@ -187,3 +188,18 @@ print(browsing_session)
 print("redirect", browsing_session[-1])
 if not browsing_session:
     print("disable")
+
+
+# Queues
+
+
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()
+
+print(queue)
+
+if not queue:
+    print("Empty")
