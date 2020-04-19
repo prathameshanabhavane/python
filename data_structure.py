@@ -78,3 +78,13 @@ print(letters)
 del letters[0:3]
 # letters.clear()
 print(letters)
+
+
+# finding item
+letters = ["a", "b", "c", "d"]
+
+print(letters.count("e"))
+
+print(letters.index("c"))
+if "e" in letters:
+    print(letters.index("e"))
