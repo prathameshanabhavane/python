@@ -203,3 +203,15 @@ print(queue)
 
 if not queue:
     print("Empty")
+
+
+# Tuple
+
+point = (1, 2, 3)
+point = (1, 2, 3) + (4, 5, 6)
+point = (1, 2, 3) * 2
+
+print(point)
+print(point[0:3])
+if 2 in point:
+    print("exists")
