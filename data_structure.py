@@ -309,7 +309,28 @@ print(values)
 
 values = (x * 2 for x in range(500000))
 print("gen: ", getsizeof(values))
+# print(len(values))
 values = [x * 2 for x in range(500000)]
 print("gen: ", getsizeof(values))
 # for x in values:
 #     print(x)
+
+
+# Unpacking Operator
+numbers = [1, 2, 3]
+
+print(*numbers)
+
+values = list(range(5))
+values = [*range(5), *"hello world"]
+
+print([*numbers, *values])
+print(values)
+print(*values)
+
+
+first = {"x": 1}
+second = {"x": 5, "y": 8}
+combined = {**first, **second, "z": 9}
+
+print(combined)
