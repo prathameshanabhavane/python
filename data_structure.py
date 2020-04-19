@@ -116,7 +116,7 @@ print(numbers)
 
 
 # Lambda Function
-# Single one line anonymous funtion
+# Simple one line anonymous funtion so that we can pass another function
 
 items = [
     ("Product1", 52),
@@ -126,3 +126,26 @@ items = [
 
 items.sort(key=lambda item: item[1])
 print(items)
+
+
+# Map function
+
+items = [
+    ("Product1", 52),
+    ("Product2", 15),
+    ("Product3", 9)
+]
+
+# prices = []
+
+# for item in items:
+#     prices.append(item[1])
+
+# print(prices)
+
+# prices = map(lambda item: item[1], items)
+# for item in prices:
+#     print(item)
+
+prices = list(map(lambda item: item[1], items))
+print(prices)
