@@ -155,3 +155,11 @@ print(prices)
 
 filtered = list(filter(lambda item: item[1] >= 10, items))
 print(filtered)
+
+# List Comprehensions
+
+prices = [item[1] for item in items]
+print(prices)
+
+filtered = [item for item in items if item[1] >= 10]
+print(filtered)
