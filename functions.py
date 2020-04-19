@@ -96,19 +96,37 @@ print(msg)
 
 # Exercise
 
+# def fizz_buzz(number):
+#     if (number % 3 == 0) and (number % 5 == 0):
+#         print("Fizz Buzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print('Buzz')
+#     else:
+#         print(number)
+
+
+# fizz_buzz(3)
+# fizz_buzz(5)
+# fizz_buzz(15)
+# fizz_buzz(7)
+# fizz_buzz(30)
+
+
 def fizz_buzz(number):
     if (number % 3 == 0) and (number % 5 == 0):
-        print("Fizz Buzz")
+        return "Fizz Buzz"
     elif number % 3 == 0:
-        print("Fizz")
+        return "Fizz"
     elif number % 5 == 0:
-        print('Buzz')
+        return 'Buzz'
     else:
-        print(number)
+        return number
 
 
-fizz_buzz(3)
-fizz_buzz(5)
-fizz_buzz(15)
-fizz_buzz(7)
-fizz_buzz(30)
+print(fizz_buzz(3))
+print(fizz_buzz(5))
+print(fizz_buzz(15))
+print(fizz_buzz(7))
+print(fizz_buzz(30))
