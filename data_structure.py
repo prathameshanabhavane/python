@@ -21,6 +21,7 @@
 
 # Accessing Items
 
+from array import array
 from collections import deque
 letters = ["a", "b", "c", "d"]
 
@@ -231,3 +232,13 @@ x, y = y, x
 
 print("x", x)
 print("y", y)
+
+
+# Array
+
+numbers = array('i', [1, 2, 3])
+print(numbers.append(4))
+print(numbers)
+print(numbers.pop())
+print(numbers[0])
+print(numbers)
