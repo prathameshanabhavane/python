@@ -65,3 +65,31 @@ def save_user(**user):
 
 
 save_user(id=1, name="Jhon", age=22)
+
+
+# scope glabal and local varaible
+
+# gloabl variable
+message = "a"
+
+
+def greet(name):
+    message = "b"  # local variable
+
+
+greet("Pratham")
+print(message)
+
+# if you hae toaccess of global variable inside fucntion then have to write global keyword before the varible inside function
+
+msg = "c"
+
+
+def message():
+    global msg
+    msg = "d"
+
+
+print(msg)
+message()
+print(msg)
