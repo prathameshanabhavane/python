@@ -55,3 +55,13 @@ def multiply(*numbers):
 
 
 print(multiply(2, 3, 4, 5))
+
+
+# xxargs
+
+def save_user(**user):
+    print(user)
+    print(f"{user['name']} age is {user['age']}")
+
+
+save_user(id=1, name="Jhon", age=22)
