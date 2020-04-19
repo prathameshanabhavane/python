@@ -21,6 +21,7 @@
 
 # Accessing Items
 
+from sys import getsizeof
 from array import array
 from collections import deque
 letters = ["a", "b", "c", "d"]
@@ -301,3 +302,14 @@ for key, value in point.items():
 # Dictionary
 values = {x: x * 2 for x in range(5)}
 print(values)
+
+
+# Generator expressions
+
+
+values = (x * 2 for x in range(500000))
+print("gen: ", getsizeof(values))
+values = [x * 2 for x in range(500000)]
+print("gen: ", getsizeof(values))
+# for x in values:
+#     print(x)
