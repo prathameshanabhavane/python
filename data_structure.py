@@ -242,3 +242,23 @@ print(numbers)
 print(numbers.pop())
 print(numbers[0])
 print(numbers)
+
+
+# Sets
+numbers = [1, 1, 2, 3, 3, 4, 5]
+
+# uniques = set(numbers)
+# print(uniques)
+
+first = set(numbers)
+second = {1, 4}
+# second.add(5)
+# second.remove(5)
+# print(len(second))
+print(first | second)
+print(first & second)
+print (first - second)
+print(first ^ second)
+
+if 1 in first:
+    print("Yes")
