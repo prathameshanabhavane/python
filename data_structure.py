@@ -34,10 +34,22 @@ print(letters[::-1])
 print(letters[-1])
 
 
-numbers = list(range(0, 20))
+# numbers = list(range(0, 20))
 
-print(numbers[::2])
-print(numbers[::3])
-print(numbers[::-3])
-print(numbers[::-2])
-print(numbers[::-1])
+# print(numbers[::2])
+# print(numbers[::3])
+# print(numbers[::-3])
+# print(numbers[::-2])
+# print(numbers[::-1])
+
+
+# List Unpacking
+
+numbers = [1, 2, 3, 45, 6, 8, 79, 85]
+
+first, second, *others = numbers
+# first, *others, last = numbers
+
+print(first, second)
+# print(first, last)
+print(others)
