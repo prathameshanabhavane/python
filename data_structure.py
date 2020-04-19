@@ -100,16 +100,29 @@ print(numbers)
 
 
 # Sort tuple with list
+# items = [
+#     ("Product1", 52),
+#     ("Product2", 15),
+#     ("Product3", 9)
+# ]
+
+
+# def sort_item(item):
+#     return item[1]
+
+
+# items.sort(key=sort_item)
+# print(items)
+
+
+# Lambda Function
+# Single one line anonymous funtion
+
 items = [
     ("Product1", 52),
     ("Product2", 15),
     ("Product3", 9)
 ]
 
-
-def sort_item(item):
-    return item[1]
-
-
-items.sort(key=sort_item)
+items.sort(key=lambda item: item[1])
 print(items)
