@@ -88,3 +88,28 @@ print(letters.count("e"))
 print(letters.index("c"))
 if "e" in letters:
     print(letters.index("e"))
+
+# Sorting List
+numbers = [3, 54, 2, 68, 79, 99]
+
+# numbers.sort()
+# numbers.sort(reverse=True)
+print(sorted(numbers))
+print(sorted(numbers, reverse=True))
+print(numbers)
+
+
+# Sort tuple with list
+items = [
+    ("Product1", 52),
+    ("Product2", 15),
+    ("Product3", 9)
+]
+
+
+def sort_item(item):
+    return item[1]
+
+
+items.sort(key=sort_item)
+print(items)
