@@ -53,3 +53,11 @@ first, second, *others = numbers
 print(first, second)
 # print(first, last)
 print(others)
+
+
+# Looping over list
+
+letters = ["a", "b", "c", "d"]
+
+for index, letter in enumerate(letters):
+    print(index, letter)
