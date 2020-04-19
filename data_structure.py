@@ -281,3 +281,23 @@ print(point.get("a", 0))
 
 for key, value in point.items():
     print(key, value)
+
+
+# Dictionary comprehentions
+
+# values = []
+# for x in range(5):
+#     values.append(x * 2)
+
+# print(values)
+
+# values = [x * 2 for x in range(5)]
+# print(values)
+
+# set
+# values = {x * 2 for x in range(5)}
+# print(values)
+
+# Dictionary
+values = {x: x * 2 for x in range(5)}
+print(values)
