@@ -66,7 +66,6 @@ def save_user(**user):
 
 save_user(id=1, name="Jhon", age=22)
 
-
 # scope glabal and local varaible
 
 # gloabl variable
@@ -93,3 +92,23 @@ def message():
 print(msg)
 message()
 print(msg)
+
+
+# Exercise
+
+def fizz_buzz(number):
+    if (number % 3 == 0) and (number % 5 == 0):
+        print("Fizz Buzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print('Buzz')
+    else:
+        print(number)
+
+
+fizz_buzz(3)
+fizz_buzz(5)
+fizz_buzz(15)
+fizz_buzz(7)
+fizz_buzz(30)
