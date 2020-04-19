@@ -30,8 +30,16 @@ print(name)
 
 
 # keyword argument
-def increament(number, by):
+# def increament(number, by):
+#     return number + by
+
+
+# print(increament(2, by=1))
+
+
+# default argument
+def increament(number, by=1):
     return number + by
 
 
-print(increament(2, by=1))
+print(increament(2))
