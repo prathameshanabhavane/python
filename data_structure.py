@@ -215,3 +215,19 @@ print(point)
 print(point[0:3])
 if 2 in point:
     print("exists")
+
+
+# Swaping variables
+
+x = 15
+y = 20
+
+# z = x
+# x = y
+# y = z
+
+x, y = y, x
+
+
+print("x", x)
+print("y", y)
