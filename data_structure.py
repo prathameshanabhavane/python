@@ -61,3 +61,20 @@ letters = ["a", "b", "c", "d"]
 
 for index, letter in enumerate(letters):
     print(index, letter)
+
+
+# Adding or removing items
+
+letters = ["a", "b", "c", "d"]
+
+# Add
+letters.append("e")
+letters.insert(0, "-")
+print(letters)
+
+# Remove
+# letters.pop()
+# letters.pop(1)
+del letters[0:3]
+# letters.clear()
+print(letters)
