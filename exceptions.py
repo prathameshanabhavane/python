@@ -11,11 +11,23 @@
 
 # Handling different exceptions
 
+# try:
+#     age = int(input("Age :"))
+#     xfactor = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("You didn't enter a valid age")
+# else:
+#     print("NO exceptions were thrown")
+# print("Excution continues...")
+
+# Cleaning Up
 try:
+    file = open("exceptions.py")
     age = int(input("Age :"))
     xfactor = 10 / age
 except (ValueError, ZeroDivisionError):
     print("You didn't enter a valid age")
 else:
     print("NO exceptions were thrown")
-print("Excution continues...")
+finally:
+    file.close()
