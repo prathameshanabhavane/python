@@ -334,3 +334,9 @@ second = {"x": 5, "y": 8}
 combined = {**first, **second, "z": 9}
 
 print(combined)
+
+
+# Exercise
+
+sentence = "This is a common interview question"
+
