@@ -131,22 +131,22 @@
 # Making custom container
 class TagCloud:
     def __init__(self):
-        self.tags = {}
+        self.__tags = {}
 
     def add(self, tag):
-        self.tags[tag.lower()] = self.tags.get(tag.lower(), 0) + 1
+        self.__tags[tag.lower()] = self.__tags.get(tag.lower(), 0) + 1
 
     def __getitem__(self, tag):
-        return self.tags.get(tag.lower(), 0)
+        return self.__tags.get(tag.lower(), 0)
 
     def setitem(self, tag, count):
-        self.tags[tag.lower()] = count
+        self.__tags[tag.lower()] = count
 
     def __len__(self):
-        return len(self.tags)
+        return len(self.__tags)
 
     def __iter__(self):
-        return iter(self.tags)
+        return iter(self.__tags)
 
 
 cloud = TagCloud()
@@ -155,4 +155,9 @@ cloud.add("python")
 cloud.add("python")
 cloud.add("python")
 
-print(cloud.tags)
+
+# private members
+
+print(cloud["PYTHON"])
+print(cloud.__dict__)
+print(cloud._TagCloud__tags)
