@@ -91,21 +91,39 @@
 # Comparing objects
 # https://rszalski.github.io/magicmethods/#comparisons
 
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+#     def __eq__(self, other):
+#         return self.x == other.x and self.y == other.y
+
+#     def __gt__(self, other):
+#         return self.x > other.x and self.y > other.y
+
+
+# point = Point(1, 2)
+# other = Point(1, 2)
+# another = Point(10, 50)
+
+# print(point == other)
+# print(another > other)
+
+# performing arithmatic operations
+
 class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
-    def __eq__(self, other):
-        return self.x == other.x and self.y == other.y
-
-    def __gt__(self, other):
-        return self.x > other.x and self.y > other.y
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
 
 
 point = Point(1, 2)
 other = Point(1, 2)
-another = Point(10, 50)
+combined = point + other
 
-print(point == other)
-print(another > other)
+print(combined.x)
+print(combined.y)
