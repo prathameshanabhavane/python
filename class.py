@@ -30,26 +30,43 @@
 
 
 # class vs instance attribute
-class Point:
-    default_color = "Red"
+# class Point:
+#     default_color = "Red"
 
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+#     def draw(self):
+#         print(f"Point ({self.x}, { self.y})")
+
+
+# Point.default_color = "Yellow"
+
+# point = Point(1, 2)
+# print(point.x)
+# print(Point.default_color)
+# print(point.default_color)
+# print(point.y)
+# point.draw()
+
+# another = Point(3, 4)
+# print(another.default_color)
+# another.draw()
+
+# class vs Instance method
+class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
+
+    @classmethod
+    def zero(cls):
+        return cls(0, 0)
 
     def draw(self):
         print(f"Point ({self.x}, { self.y})")
 
 
-Point.default_color = "Yellow"
-
-point = Point(1, 2)
-print(point.x)
-print(Point.default_color)
-print(point.default_color)
-print(point.y)
+point = Point.zero()
 point.draw()
-
-another = Point(3, 4)
-print(another.default_color)
-another.draw()
