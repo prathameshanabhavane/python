@@ -349,3 +349,6 @@ flyingfish.swim()
 # stream = MemoryStream()
 
 # stream.open
+
+
+# Polymorphism
