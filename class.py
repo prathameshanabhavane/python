@@ -129,6 +129,7 @@
 # print(combined.y)
 
 # Making custom container
+
 class TagCloud:
     def __init__(self):
         self.__tags = {}
@@ -277,30 +278,74 @@ flyingfish.swim()
 
 # A good example of inheritance
 
-class InvalidOperationError:
-    pass
+# class InvalidOperationError:
+#     pass
 
 
-class Stream:
-    def __init(self):
-        self.opened = False
+# class Stream:
+#     def __init(self):
+#         self.opened = False
 
-    def open(self):
-        if self.opened:
-            raise IndentationError("Stream is already open.")
-        self.opened = True
+#     def open(self):
+#         if self.opened:
+#             raise IndentationError("Stream is already open.")
+#         self.opened = True
 
-     def open(self):
-        if self.opened:
-            raise IndentationError("Stream is already close.")
-        self.opened = False
-
-
-class FileStream(Stream):
-    def read(self):
-        print("Reading data from file")
+#      def open(self):
+#         if self.opened:
+#             raise IndentationError("Stream is already close.")
+#         self.opened = False
 
 
-class NetworkStream(Stream):
-    def read(self):
-        print("Reading data from network")
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from file")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from network")
+
+
+# Abstract Base class  #have an issue this code
+
+# from abc import ABC abstractmethod
+
+# class InvalidOperationError(Exception):
+#     pass
+
+
+# class Stream:
+#     def __init(self):
+#         self.opened = False
+
+#     def open(self):
+#         if self.opened:
+#             raise IndentationError("Stream is already open.")
+#         self.opened = True
+
+#      def open(self):
+#         if self.opened:
+#             raise IndentationError("Stream is already close.")
+#         self.opened = False
+
+#     @abstractmethod
+#     def read(self):
+#         pass
+
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from file")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from network")
+
+# class MemoryStream(Stream):
+#     def read(self):
+#         print("Reading data from memory")
+
+# stream = MemoryStream()
+
+# stream.open
