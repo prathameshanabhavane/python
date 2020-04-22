@@ -250,3 +250,26 @@ class Mammal(Animal):
 m = Mammal()
 print(m.age)
 print(m.weight)
+
+
+# Multi level inheritance
+# Multi level inheritance
+
+class Flyer:
+    def fly(Self):
+        print("Fly")
+
+
+class Swimmer:
+    def swim(Self):
+        print("Swim")
+
+
+class FlyingFish(Flyer, Swimmer):
+    pass
+
+
+flyingfish = FlyingFish()
+
+flyingfish.fly()
+flyingfish.swim()
