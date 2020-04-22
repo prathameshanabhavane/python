@@ -37,7 +37,19 @@
 
 # Sub packagin
 
+# from ecommerce.shopping import sales
+
+# sales.calc_shipping()
+# sales.calc_tax()
+
+# The dir() function
+
+
 from ecommerce.shopping import sales
 
-sales.calc_shipping()
-sales.calc_tax()
+print(dir(sales))
+
+print(sales.__name__)
+print(sales.__package__)
+print(sales.__file__)
+print(sales.__spec__)
