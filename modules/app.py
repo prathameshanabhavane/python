@@ -29,7 +29,15 @@
 # calc_tax()
 
 
-from ecommerce import sales
+# from ecommerce import sales
+
+# sales.calc_shipping()
+# sales.calc_tax()
+
+
+# Sub packagin
+
+from ecommerce.shopping import sales
 
 sales.calc_shipping()
 sales.calc_tax()
