@@ -45,11 +45,15 @@
 # The dir() function
 
 
+# from ecommerce.shopping import sales
+
+# print(dir(sales))
+
+# print(sales.__name__)
+# print(sales.__package__)
+# print(sales.__file__)
+# print(sales.__spec__)
+
+# Executing moduls as a script
+
 from ecommerce.shopping import sales
-
-print(dir(sales))
-
-print(sales.__name__)
-print(sales.__package__)
-print(sales.__file__)
-print(sales.__spec__)
