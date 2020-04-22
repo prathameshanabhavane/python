@@ -186,6 +186,9 @@ print(product.price)
 
 # Inheritance
 
+# Animal : parent, base
+# Mammal and Fish: child, sub
+
 class Animal:
     def __init__(self):
         self.age = 1
@@ -212,3 +215,12 @@ print(m.age)
 f = Fish()
 f.eat()
 print(f.age)
+
+
+# The object class
+
+print(isinstance(m, object))
+o = object()
+print(isinstance(m, Mammal))
+print(issubclass(Mammal, Animal))
+print(issubclass(Mammal, object))
