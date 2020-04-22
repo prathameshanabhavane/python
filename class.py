@@ -189,8 +189,48 @@ print(product.price)
 # Animal : parent, base
 # Mammal and Fish: child, sub
 
+# class Animal:
+#     def __init__(self):
+#         self.age = 1
+
+#     def eat(self):
+#         print("eat")
+
+
+# class Mammal(Animal):
+#     def walk(self):
+#         print("walk")
+
+
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
+
+
+# m = Mammal()
+# m.walk()
+# m.eat()
+# print(m.age)
+
+# f = Fish()
+# f.eat()
+# print(f.age)
+
+
+# The object class
+
+# print(isinstance(m, object))
+# o = object()
+# print(isinstance(m, Mammal))
+# print(issubclass(Mammal, Animal))
+# print(issubclass(Mammal, object))
+
+
+# Method Overriding
+
 class Animal:
     def __init__(self):
+        print("Animal constructor")
         self.age = 1
 
     def eat(self):
@@ -198,29 +238,15 @@ class Animal:
 
 
 class Mammal(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Mammal Constructor")
+        self.weight = 2
+
     def walk(self):
         print("walk")
 
 
-class Fish(Animal):
-    def swim(self):
-        print("swim")
-
-
 m = Mammal()
-m.walk()
-m.eat()
 print(m.age)
-
-f = Fish()
-f.eat()
-print(f.age)
-
-
-# The object class
-
-print(isinstance(m, object))
-o = object()
-print(isinstance(m, Mammal))
-print(issubclass(Mammal, Animal))
-print(issubclass(Mammal, object))
+print(m.weight)
