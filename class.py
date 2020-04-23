@@ -164,7 +164,7 @@ print(cloud.__dict__)
 print(cloud._TagCloud__tags)
 
 
-# Priperties
+# Properties
 class Product:
     def __init__(self, price):
         self.price = price
